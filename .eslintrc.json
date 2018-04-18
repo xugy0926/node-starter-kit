@@ -1,0 +1,19 @@
+{
+  "globals": {
+    "__DEV__": true
+  },
+  "env": {
+    "browser": true
+  },
+  "extends": ["airbnb"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "import/no-dynamic-require": 0
+  }
+}
