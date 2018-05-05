@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const config = require('./config');
+const config = require('config');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -43,6 +43,6 @@ app.use((err, req, res, next) => {
 });
 
 const server = http.createServer(app);
-server.listen(config.PORT);
+server.listen(config.get('PORT'));
 
 module.exports = app;

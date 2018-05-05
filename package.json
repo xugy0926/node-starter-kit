@@ -13,6 +13,7 @@
     "lint": "yarn run lint-js"
   },
   "dependencies": {
+    "config": "^1.30.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
